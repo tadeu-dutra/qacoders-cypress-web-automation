@@ -1,0 +1,15 @@
+{
+  "name": "qacoders-cypress-web-automation",
+  "version": "1.0.0",
+  "description": "Cypress Web Automation project built during TQA-13 course provided by QA Coders.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.16.0"
+  }
+}
