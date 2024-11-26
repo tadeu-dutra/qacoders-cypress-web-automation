@@ -4,7 +4,8 @@
   "description": "Cypress Web Automation project built during TQA-13 course provided by QA Coders.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress:run" : "cypress run"
   },
   "keywords": [],
   "author": "",
