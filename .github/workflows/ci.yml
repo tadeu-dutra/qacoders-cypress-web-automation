@@ -30,6 +30,9 @@ jobs:
 
     - name: Install Cypress
       run: npm install cypress --save-dev
-    
+
+    - name: Use Secrets
+      run: |
+        printf ${{ secrets.EMAIL }}\${{ secrets.PASSWORD }}\${{ secrets.INVALID_EMAIL }}\${{ secrets.INVALID_PASSWORD }} | base64 > cypress.env.json
     - name: Run Cypress Tests
       run: npm run cypress:run
