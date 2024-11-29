@@ -35,5 +35,5 @@ jobs:
       run: |
         printf "{\n\"EMAIL\": \"${{ secrets.EMAIL }}\"\n\"PASSWORD\": \"${{ secrets.PASSWORD }}\"\n\"INVALID_EMAIL\": \"${{ secrets.INVALID_EMAIL }}\"\n\"INVALID_PASSWORD\": \"${{ secrets.INVALID_PASSWORD }}\"\n}" > cypress.env.json |
         cat cypress.env.json
-    # - name: Run Cypress Tests
-    #   run: npm run cypress:run
+    - name: Run Cypress Tests
+      run: npm run cypress:run
