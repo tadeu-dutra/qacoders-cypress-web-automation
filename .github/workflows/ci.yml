@@ -33,6 +33,6 @@ jobs:
 
     - name: Use Secrets
       run: |
-        printf "{\n${{ secrets.EMAIL }}\n${{ secrets.PASSWORD }}\n${{ secrets.INVALID_EMAIL }}\n${{ secrets.INVALID_PASSWORD }}\n}" | base64 > cypress.env.json
+        printf "{\n$\"EMAIL\": \"{{ secrets.EMAIL }}\"\n\"PASSWORD\": \"${{ secrets.PASSWORD }}\"\n\"INVALID_EMAIL\": \"${{ secrets.INVALID_EMAIL }}\"\n\"INVALID_PASSWORD\": \"${{ secrets.INVALID_PASSWORD }}\"\n}" | base64 > cypress.env.json
     - name: Run Cypress Tests
       run: npm run cypress:run
